@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.46.0.jar -role webdriver -browser browserName="chrome",version=48.0,platform=WINDOWS -Dwebdriver.chrome.driver=.\chromedriver.exe -hubhttp://localhost:4444/grid/register -port 5533 -nodeTimeout 6000

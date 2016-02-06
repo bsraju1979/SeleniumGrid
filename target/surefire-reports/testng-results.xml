@@ -1,0 +1,1123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="34" failed="2" total="37" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="GRID SAMPLE TEST" duration-ms="190955" started-at="2016-02-05T09:38:12Z" finished-at="2016-02-05T09:41:23Z">
+    <groups>
+    </groups>
+    <test name="SETUP-HUB AND NODE CREATION" duration-ms="88" started-at="2016-02-05T09:38:12Z" finished-at="2016-02-05T09:38:12Z">
+      <class name="utils.InitiateHubAndNode">
+        <test-method status="PASS" signature="setup()[pri:0, instance:utils.InitiateHubAndNode@35bbe5e8]" name="setup" duration-ms="76" started-at="2016-02-05T15:08:12Z" finished-at="2016-02-05T15:08:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+      </class> <!-- utils.InitiateHubAndNode -->
+    </test> <!-- SETUP-HUB AND NODE CREATION -->
+    <test name="GRID TEST WITH BROWSER Chrome ON WINDOWS" duration-ms="71632" started-at="2016-02-05T09:38:12Z" finished-at="2016-02-05T09:39:24Z">
+      <class name="googledrive.GoogleDriveScenarios">
+        <test-method status="PASS" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="GridCaps" is-config="true" duration-ms="15481" started-at="2016-02-05T15:08:12Z" finished-at="2016-02-05T15:08:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WINDOWS]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="FAIL" signature="GoogleDriveNegativeScenarioLoginFirstCase()[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="GoogleDriveNegativeScenarioLoginFirstCase" duration-ms="19828" started-at="2016-02-05T15:08:27Z" finished-at="2016-02-05T15:08:47Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[chrome not reachable
+  (Session info: chrome=48.0.2564.97)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\BSRAJU\AppData\Local\Temp\scoped_dir15144_16938}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.97, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c27911004c16fae9c44a68ba8bb355b1
+*** Element info: {Using=id, value=Passwd}
+Command duration or timeout: 3.01 seconds
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\BSRAJU\AppData\Local\Temp\scoped_dir15144_16938}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.97, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=40f3de6d-d4fb-4f4f-8563-1b52acb83dac, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40f3de6d-d4fb-4f4f-8563-1b52acb83dac
+*** Element info: {Using=id, value=Passwd}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=48.0.2564.97)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\BSRAJU\AppData\Local\Temp\scoped_dir15144_16938}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.97, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c27911004c16fae9c44a68ba8bb355b1
+*** Element info: {Using=id, value=Passwd}
+Command duration or timeout: 3.01 seconds
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\BSRAJU\AppData\Local\Temp\scoped_dir15144_16938}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.97, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=40f3de6d-d4fb-4f4f-8563-1b52acb83dac, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40f3de6d-d4fb-4f4f-8563-1b52acb83dac
+*** Element info: {Using=id, value=Passwd}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+	at org.openqa.selenium.By$ById.findElement(By.java:218)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:274)
+	at googledrive.GoogleDriveScenarios.GoogleDriveNegativeScenarioLoginFirstCase(GoogleDriveScenarios.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 34 more
+Caused by: org.openqa.selenium.WebDriverException: chrome not reachable
+  (Session info: chrome=48.0.2564.97)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\BSRAJU\AppData\Local\Temp\scoped_dir15144_16938}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.97, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c27911004c16fae9c44a68ba8bb355b1
+*** Element info: {Using=id, value=Passwd}
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: EventFiringWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+	at org.openqa.selenium.By$ById.findElement(By.java:215)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+	at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:185)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+	at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveNegativeScenarioLoginFirstCase -->
+        <test-method status="FAIL" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:08:47Z" finished-at="2016-02-05T15:08:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WINDOWS]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5533 [/192.168.1.7] failed: Connection refused: connect
+Command duration or timeout: 26.27 seconds
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5533 [/192.168.1.7] failed: Connection refused: connect
+Command duration or timeout: 26.27 seconds
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5533 [/192.168.1.7] failed: Connection refused: connect
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)
+	at org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)
+	at org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)
+	at org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.seleniumhq.jetty7.server.Server.handle(Server.java:349)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)
+	at org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)
+	at org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:09:23Z" finished-at="2016-02-05T15:09:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="4" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="CloseBrowserWhileUploadingFileFromGoogleDrive()[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="CloseBrowserWhileUploadingFileFromGoogleDrive" duration-ms="0" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowserWhileUploadingFileFromGoogleDrive -->
+        <test-method status="SKIP" signature="GoogleDriveUploadImageWhenInternetIsOff()[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="GoogleDriveUploadImageWhenInternetIsOff" duration-ms="0" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveUploadImageWhenInternetIsOff -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@4411d970]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </test> <!-- GRID TEST WITH BROWSER Chrome ON WINDOWS -->
+    <test name="GRID TEST WITH BROWSER CH ON LINUX" duration-ms="11088" started-at="2016-02-05T09:39:24Z" finished-at="2016-02-05T09:39:35Z">
+      <class name="googledrive.GoogleDriveScenarios">
+        <test-method status="FAIL" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:24Z" finished-at="2016-02-05T15:09:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LINUX]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5544 [/192.168.1.7] failed: Connection refused: connect
+Command duration or timeout: 1.05 seconds
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5544 [/192.168.1.7] failed: Connection refused: connect
+Command duration or timeout: 1.05 seconds
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.WebDriverException: Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5544 [/192.168.1.7] failed: Connection refused: connect
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+	at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+	at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+	at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+	at org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)
+	at org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)
+	at org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)
+	at org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+	at org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)
+	at org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)
+	at org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+	at org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+	at org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+	at org.seleniumhq.jetty7.server.Server.handle(Server.java:349)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+	at org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+	at org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+	at org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:857)
+	at org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:235)
+	at org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)
+	at org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)
+	at org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+	at org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="4" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GoogleDriveNegativeScenarioLoginFirstCase()[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="GoogleDriveNegativeScenarioLoginFirstCase" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveNegativeScenarioLoginFirstCase -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="4" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="GridCaps" is-config="true" duration-ms="4" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="CloseBrowserWhileUploadingFileFromGoogleDrive()[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="CloseBrowserWhileUploadingFileFromGoogleDrive" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowserWhileUploadingFileFromGoogleDrive -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GoogleDriveUploadImageWhenInternetIsOff()[pri:0, instance:googledrive.GoogleDriveScenarios@6108b2d7]" name="GoogleDriveUploadImageWhenInternetIsOff" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveUploadImageWhenInternetIsOff -->
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </test> <!-- GRID TEST WITH BROWSER CH ON LINUX -->
+    <test name="GRID TEST WITH BROWSER CH ON MAC" duration-ms="41631" started-at="2016-02-05T09:39:35Z" finished-at="2016-02-05T09:40:16Z">
+      <class name="googledrive.GoogleDriveScenarios">
+        <test-method status="FAIL" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:09:35Z" finished-at="2016-02-05T15:09:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[CH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAC]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GoogleDriveNegativeScenarioLoginFirstCase()[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="GoogleDriveNegativeScenarioLoginFirstCase" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveNegativeScenarioLoginFirstCase -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="1" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="CloseBrowserWhileUploadingFileFromGoogleDrive()[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="CloseBrowserWhileUploadingFileFromGoogleDrive" duration-ms="1" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowserWhileUploadingFileFromGoogleDrive -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GoogleDriveUploadImageWhenInternetIsOff()[pri:0, instance:googledrive.GoogleDriveScenarios@6aaa5eb0]" name="GoogleDriveUploadImageWhenInternetIsOff" duration-ms="1" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveUploadImageWhenInternetIsOff -->
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </test> <!-- GRID TEST WITH BROWSER CH ON MAC -->
+    <test name="GRID TEST WITH BROWSER FF ON WINDOWS" duration-ms="12048" started-at="2016-02-05T09:40:16Z" finished-at="2016-02-05T09:40:28Z">
+      <class name="googledrive.GoogleDriveScenarios">
+        <test-method status="FAIL" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:16Z" finished-at="2016-02-05T15:10:16Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[WINDOWS]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 46 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GoogleDriveNegativeScenarioLoginFirstCase()[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="GoogleDriveNegativeScenarioLoginFirstCase" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveNegativeScenarioLoginFirstCase -->
+        <test-method status="SKIP" signature="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="4" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="CloseBrowserWhileUploadingFileFromGoogleDrive()[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="CloseBrowserWhileUploadingFileFromGoogleDrive" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowserWhileUploadingFileFromGoogleDrive -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GoogleDriveUploadImageWhenInternetIsOff()[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="GoogleDriveUploadImageWhenInternetIsOff" duration-ms="4" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveUploadImageWhenInternetIsOff -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@380fb434]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </test> <!-- GRID TEST WITH BROWSER FF ON WINDOWS -->
+    <test name="GRID TEST WITH BROWSER FF ON MAC" duration-ms="12041" started-at="2016-02-05T09:40:28Z" finished-at="2016-02-05T09:40:40Z">
+      <class name="googledrive.GoogleDriveScenarios">
+        <test-method status="FAIL" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:28Z" finished-at="2016-02-05T15:10:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[MAC]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 33 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+	... 46 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GoogleDriveNegativeScenarioLoginFirstCase()[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="GoogleDriveNegativeScenarioLoginFirstCase" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveNegativeScenarioLoginFirstCase -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="CloseBrowserWhileUploadingFileFromGoogleDrive()[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="CloseBrowserWhileUploadingFileFromGoogleDrive" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowserWhileUploadingFileFromGoogleDrive -->
+        <test-method status="SKIP" signature="GoogleDriveUploadImageWhenInternetIsOff()[pri:0, instance:googledrive.GoogleDriveScenarios@6b2fad11]" name="GoogleDriveUploadImageWhenInternetIsOff" duration-ms="0" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveUploadImageWhenInternetIsOff -->
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </test> <!-- GRID TEST WITH BROWSER FF ON MAC -->
+    <test name="GRID TEST WITH BROWSER FF ON LINUX" duration-ms="42179" started-at="2016-02-05T09:40:40Z" finished-at="2016-02-05T09:41:23Z">
+      <class name="googledrive.GoogleDriveScenarios">
+        <test-method status="PASS" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="GridCaps" is-config="true" duration-ms="18293" started-at="2016-02-05T15:10:40Z" finished-at="2016-02-05T15:10:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LINUX]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="FAIL" signature="GoogleDriveNegativeScenarioLoginFirstCase()[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="GoogleDriveNegativeScenarioLoginFirstCase" duration-ms="8860" started-at="2016-02-05T15:10:59Z" finished-at="2016-02-05T15:11:08Z">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[Window not found. The browser window may have been closed.
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+Command duration or timeout: 565 milliseconds
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=383372db-4d73-4387-887f-7e81eb25664b, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 383372db-4d73-4387-887f-7e81eb25664b
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+Command duration or timeout: 565 milliseconds
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=383372db-4d73-4387-887f-7e81eb25664b, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 383372db-4d73-4387-887f-7e81eb25664b
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+	at googledrive.GoogleDriveScenarios.GoogleDriveNegativeScenarioLoginFirstCase(GoogleDriveScenarios.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+	... 34 more
+Caused by: org.openqa.selenium.NoSuchWindowException: Window not found. The browser window may have been closed.
+Build info: version: '2.46.0', revision: '87c69e2', time: '2015-06-04 16:16:47'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: unknown
+	at <anonymous class>.nsCommandProcessor.prototype.execute(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12350)
+	at <anonymous class>.Dispatcher.executeAs/<(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9089)
+	at <anonymous class>.Resource.prototype.handle(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9236)
+	at <anonymous class>.Dispatcher.prototype.dispatch(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9183)
+	at <anonymous class>.WebDriverServer/<.handle(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12136)
+	at <anonymous class>.createHandlerFunc/<(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
+	at <anonymous class>.ServerHandler.prototype.handleResponse(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
+	at <anonymous class>.Connection.prototype.process(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
+	at <anonymous class>.RequestReader.prototype._handleResponse(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
+	at <anonymous class>.RequestReader.prototype._processBody(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
+	at <anonymous class>.RequestReader.prototype.onInputStreamReady(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveNegativeScenarioLoginFirstCase -->
+        <test-method status="FAIL" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:11:08Z" finished-at="2016-02-05T15:11:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FF]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[LINUX]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
+            <message>
+              <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '2.49.1', revision: '808c23b0963853d375cbe54b90bbd052e2528a54', time: '2016-01-21 09:37:52'
+System info: host: 'SRAJU', ip: '192.168.1.7', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '1.8.0_71'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:158)
+	at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:295)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:90)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(SocketInputStream.java:209)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+	at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+	at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+	at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+	at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+	... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="GoogleDriveUploadImageWhenInternetIsOff()[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="GoogleDriveUploadImageWhenInternetIsOff" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GoogleDriveUploadImageWhenInternetIsOff -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite()[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite -->
+        <test-method status="SKIP" signature="CloseBrowserWhileUploadingFileFromGoogleDrive()[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="CloseBrowserWhileUploadingFileFromGoogleDrive" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowserWhileUploadingFileFromGoogleDrive -->
+        <test-method status="SKIP" signature="GridCaps(java.lang.String, java.lang.String)[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="GridCaps" is-config="true" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GridCaps -->
+        <test-method status="SKIP" signature="teardownafterrun()[pri:0, instance:googledrive.GoogleDriveScenarios@42d3bd8b]" name="teardownafterrun" is-config="true" duration-ms="0" started-at="2016-02-05T15:11:23Z" finished-at="2016-02-05T15:11:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownafterrun -->
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </test> <!-- GRID TEST WITH BROWSER FF ON LINUX -->
+  </suite> <!-- GRID SAMPLE TEST -->
+</testng-results>

@@ -1,0 +1,724 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">SETUP-HUB AND NODE CREATION</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER Chrome ON WINDOWS</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi_attn">1</td><td class="numi">71.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER CH ON LINUX</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">0</td><td class="numi">11.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER CH ON MAC</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">0</td><td class="numi">41.6 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER FF ON WINDOWS</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">0</td><td class="numi">12.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER FF ON MAC</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">0</td><td class="numi">12.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER FF ON LINUX</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi_attn">1</td><td class="numi">42.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">1</td><td class="numi">1</td><td class="numi_attn">34</td><td class="numi_attn">2</td><td class="numi">191.0 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">SETUP-HUB AND NODE CREATION &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">utils.InitiateHubAndNode</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1454665092225</td><td class="numi">76</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER Chrome ON WINDOWS &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="2">googledrive.GoogleDriveScenarios</td><td><a href="#m2"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454665127708</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m3"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454665127708</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER Chrome ON WINDOWS &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m4"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454665107862</td><td class="numi">19828</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER Chrome ON WINDOWS &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="2">googledrive.GoogleDriveScenarios</td><td><a href="#m5"><b>GridCaps</b>  </a></td><td class="numi">4</td><td>1454665164001</td><td class="numi">12</td></tr><tr class="skippedodd"><td><a href="#m6"><b>GridCaps</b>  </a></td><td class="numi">4</td><td>1454665164001</td><td class="numi">12</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER Chrome ON WINDOWS &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="5">googledrive.GoogleDriveScenarios</td><td><a href="#m7"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454665164005</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m8"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454665164013</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m9"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665164001</td><td class="numi">4</td></tr><tr class="skippedodd"><td><a href="#m10"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665164001</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m11"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665163997</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER CH ON LINUX &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m12"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454665164087</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER CH ON LINUX &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m13"><b>GridCaps</b>  </a></td><td class="numi">5</td><td>1454665175162</td><td class="numi">12</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER CH ON LINUX &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="6">googledrive.GoogleDriveScenarios</td><td><a href="#m14"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454665175174</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m15"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454665175162</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m16"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454665175174</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m17"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665175170</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m18"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665175166</td><td class="numi">4</td></tr><tr class="skippedodd"><td><a href="#m19"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665175162</td><td class="numi">4</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER CH ON MAC &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m20"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454665175198</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER CH ON MAC &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m21"><b>GridCaps</b>  </a></td><td class="numi">5</td><td>1454665216822</td><td class="numi">6</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER CH ON MAC &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="6">googledrive.GoogleDriveScenarios</td><td><a href="#m22"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454665216826</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m23"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454665216821</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m24"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454665216828</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m25"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665216825</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m26"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665216824</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m27"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665216822</td><td class="numi">1</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON WINDOWS &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m28"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454665216846</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON WINDOWS &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m29"><b>GridCaps</b>  </a></td><td class="numi">5</td><td>1454665228881</td><td class="numi">8</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON WINDOWS &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="6">googledrive.GoogleDriveScenarios</td><td><a href="#m30"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454665228889</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m31"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454665228881</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m32"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454665228889</td><td class="numi">4</td></tr><tr class="skippedodd"><td><a href="#m33"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665228885</td><td class="numi">4</td></tr><tr class="skippedodd"><td><a href="#m34"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665228885</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m35"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665228881</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON MAC &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m36"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454665228925</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON MAC &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m37"><b>GridCaps</b>  </a></td><td class="numi">5</td><td>1454665240957</td><td class="numi">8</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON MAC &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="6">googledrive.GoogleDriveScenarios</td><td><a href="#m38"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454665240965</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m39"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454665240957</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m40"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454665240965</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m41"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665240961</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m42"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665240961</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m43"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665240957</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON LINUX &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="2">googledrive.GoogleDriveScenarios</td><td><a href="#m44"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454665268147</td><td class="numi">0</td></tr><tr class="failedodd"><td><a href="#m45"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454665268147</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON LINUX &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m46"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454665259282</td><td class="numi">8860</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON LINUX &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="3">googledrive.GoogleDriveScenarios</td><td><a href="#m47"><b>GridCaps</b>  </a></td><td class="numi">4</td><td>1454665283168</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m48"><b>GridCaps</b>  </a></td><td class="numi">4</td><td>1454665283168</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m49"><b>teardownafterrun</b>  </a></td><td class="numi">1</td><td>1454665283192</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON LINUX &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="5">googledrive.GoogleDriveScenarios</td><td><a href="#m50"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454665283168</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m51"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454665283168</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m52"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665283168</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m53"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665283168</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m54"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454665283164</td><td class="numi">0</td></tr>
+</table>
+<h1>SETUP-HUB AND NODE CREATION</h1>
+<h2 id="m1">utils.InitiateHubAndNode:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER Chrome ON WINDOWS</h1>
+<h2 id="m2">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>CH</td>
+<td>WINDOWS</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5533 [/192.168.1.7] failed: Connection refused: connect
+Command duration or timeout: 26.27 seconds
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+<p>Caused by Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5533 [/192.168.1.7] failed: Connection refused: connect
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)
+<br/>at org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)
+<br/>at org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)
+<br/>at org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)
+<br/>at org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+<br/>at org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+<br/>at org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+<br/>at org.seleniumhq.jetty7.server.Server.handle(Server.java:349)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+<br/>at org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+<br/>at org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:857)
+<br/>at org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:235)
+<br/>at org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)
+<br/>at org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)
+<br/>at org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+<br/>at org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<div style="padding-left:3em">
+<p>chrome not reachable
+  (Session info: chrome=48.0.2564.97)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\BSRAJU\AppData\Local\Temp\scoped_dir15144_16938}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.97, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c27911004c16fae9c44a68ba8bb355b1
+*** Element info: {Using=id, value=Passwd}
+Command duration or timeout: 3.01 seconds
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\BSRAJU\AppData\Local\Temp\scoped_dir15144_16938}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.97, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=40f3de6d-d4fb-4f4f-8563-1b52acb83dac, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 40f3de6d-d4fb-4f4f-8563-1b52acb83dac
+*** Element info: {Using=id, value=Passwd}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:274)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveNegativeScenarioLoginFirstCase(GoogleDriveScenarios.java:102)
+<br/>28 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:413)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:218)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:274)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveNegativeScenarioLoginFirstCase(GoogleDriveScenarios.java:102)
+<br/>28 lines not shown
+<p>Caused by chrome not reachable
+  (Session info: chrome=48.0.2564.97)
+  (Driver info: chromedriver=2.20.353145 (343b531d31eeb933ec778dbcf7081628a1396067),platform=Windows NT 6.3 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 2.02 seconds
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\BSRAJU\AppData\Local\Temp\scoped_dir15144_16938}, takesHeapSnapshot=true, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=48.0.2564.97, platform=WIN8_1, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c27911004c16fae9c44a68ba8bb355b1
+*** Element info: {Using=id, value=Passwd}
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: EventFiringWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+<br/>at java.lang.reflect.Constructor.newInstance(Unknown Source)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:605)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:399)
+<br/>at org.openqa.selenium.By$ById.findElement(By.java:215)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br/>at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+<br/>at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+<br/>at java.lang.reflect.Method.invoke(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:102)
+<br/>at com.sun.proxy.$Proxy1.findElement(Unknown Source)
+<br/>at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:185)
+<br/>at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:48)
+<br/>at org.openqa.selenium.remote.server.handler.FindElement.call(FindElement.java:1)
+<br/>at java.util.concurrent.FutureTask.run(Unknown Source)
+<br/>at org.openqa.selenium.remote.server.DefaultSession$1.run(DefaultSession.java:176)
+<br/>at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+<br/>at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m8">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER CH ON LINUX</h1>
+<h2 id="m13">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>CH</td>
+<td>LINUX</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5544 [/192.168.1.7] failed: Connection refused: connect
+Command duration or timeout: 1.05 seconds
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+<p>Caused by Error forwarding the new session Error forwarding the request Connect to 192.168.1.7:5544 [/192.168.1.7] failed: Connection refused: connect
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)
+<br/>at org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)
+<br/>at org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)
+<br/>at org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)
+<br/>at org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+<br/>at org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+<br/>at org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+<br/>at org.seleniumhq.jetty7.server.Server.handle(Server.java:349)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+<br/>at org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+<br/>at org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:857)
+<br/>at org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:235)
+<br/>at org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)
+<br/>at org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)
+<br/>at org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+<br/>at org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m14">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m20">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER CH ON MAC</h1>
+<h2 id="m25">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>CH</td>
+<td>MAC</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+<p>Caused by Connection reset</p>
+java.net.SocketInputStream.read(SocketInputStream.java:209)
+<br/>at java.net.SocketInputStream.read(SocketInputStream.java:141)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+<br/>at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+<br/>at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+<br/>at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m26">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m32">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER FF ON WINDOWS</h1>
+<h2 id="m37">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>FF</td>
+<td>WINDOWS</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+<p>Caused by Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect</p>
+org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br/>at java.net.Socket.connect(Socket.java:589)
+<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+<br/>at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m45">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m46">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m47">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m48">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER FF ON MAC</h1>
+<h2 id="m49">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>FF</td>
+<td>MAC</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+<p>Caused by Connect to localhost:4444 [localhost/127.0.0.1, localhost/0:0:0:0:0:0:0:1] failed: Connection refused: connect</p>
+org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:151)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+<p>Caused by Connection refused: connect</p>
+java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+<br/>at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+<br/>at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+<br/>at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+<br/>at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+<br/>at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+<br/>at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+<br/>at java.net.Socket.connect(Socket.java:589)
+<br/>at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:74)
+<br/>at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:134)
+<br/>at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:353)
+<br/>at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:380)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m50">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m51">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m52">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m53">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m54">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m55">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m56">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m57">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m58">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m59">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m60">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER FF ON LINUX</h1>
+<h2 id="m61">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>FF</td>
+<td>LINUX</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:665)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+<p>Caused by Connection reset</p>
+java.net.SocketInputStream.read(SocketInputStream.java:209)
+<br/>at java.net.SocketInputStream.read(SocketInputStream.java:141)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.streamRead(SessionInputBufferImpl.java:139)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.fillBuffer(SessionInputBufferImpl.java:155)
+<br/>at org.apache.http.impl.io.SessionInputBufferImpl.readLine(SessionInputBufferImpl.java:284)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:140)
+<br/>at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:57)
+<br/>at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:261)
+<br/>at org.apache.http.impl.DefaultBHttpClientConnection.receiveResponseHeader(DefaultBHttpClientConnection.java:165)
+<br/>at org.apache.http.impl.conn.CPoolProxy.receiveResponseHeader(CPoolProxy.java:167)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:272)
+<br/>at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:124)
+<br/>at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:271)
+<br/>at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:184)
+<br/>at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:88)
+<br/>at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+<br/>at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:71)
+<br/>at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:143)
+<br/>at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:89)
+<br/>at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:644)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>30 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m62">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<div style="padding-left:3em">
+<p>Window not found. The browser window may have been closed.
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 565 milliseconds
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=383372db-4d73-4387-887f-7e81eb25664b, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 383372db-4d73-4387-887f-7e81eb25664b
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveNegativeScenarioLoginFirstCase(GoogleDriveScenarios.java:102)
+<br/>28 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveNegativeScenarioLoginFirstCase(GoogleDriveScenarios.java:102)
+<br/>28 lines not shown
+<p>Caused by Window not found. The browser window may have been closed.
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;192.168.1.7&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.nsCommandProcessor.prototype.execute(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12350)
+<br/>at &lt;anonymous class&gt;.Dispatcher.executeAs/&lt;(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9089)
+<br/>at &lt;anonymous class&gt;.Resource.prototype.handle(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9236)
+<br/>at &lt;anonymous class&gt;.Dispatcher.prototype.dispatch(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:9183)
+<br/>at &lt;anonymous class&gt;.WebDriverServer/&lt;.handle(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:12136)
+<br/>at &lt;anonymous class&gt;.createHandlerFunc/&lt;(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2054)
+<br/>at &lt;anonymous class&gt;.ServerHandler.prototype.handleResponse(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:2387)
+<br/>at &lt;anonymous class&gt;.Connection.prototype.process(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1223)
+<br/>at &lt;anonymous class&gt;.RequestReader.prototype._handleResponse(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1677)
+<br/>at &lt;anonymous class&gt;.RequestReader.prototype._processBody(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1525)
+<br/>at &lt;anonymous class&gt;.RequestReader.prototype.onInputStreamReady(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous4100017779374582962webdriver-profile/extensions/fxdriver@googlecode.com/components/httpd.js:1393)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m63">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m64">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m65">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m66">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m67">googledrive.GoogleDriveScenarios:teardownafterrun</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m68">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m69">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m70">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m71">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m72">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

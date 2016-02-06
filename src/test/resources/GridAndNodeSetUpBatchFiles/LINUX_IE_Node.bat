@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.46.0.jar -role webdriver -browser browserName="internet explorer",version=11,platform=LINUX -Dwebdriver.ie.driver=.\IEDriverServer.exe -hubhttp://localhost:4444/grid/register -port 5566 -nodeTimeout 6000

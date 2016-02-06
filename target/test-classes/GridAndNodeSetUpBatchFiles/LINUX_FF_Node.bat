@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.46.0.jar -role webdriver -browser browserName="firefox",version=24.0,platform=LINUX -hubhttp://localhost:4444/grid/register -port 5987 -nodeTimeout 6000

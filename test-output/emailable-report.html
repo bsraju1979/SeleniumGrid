@@ -1,0 +1,620 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>TestNG:  Unit Test</title>
+<style type="text/css">
+table caption,table.info_table,table.result,table.passed,table.failed {margin-bottom:10px;border:1px solid #000099;border-collapse:collapse;empty-cells:show;}
+table.info_table td,table.info_table th,table.result td,table.result th,table.passed td,table.passed th,table.failed td,table.failed th {
+border:1px solid #000099;padding:.25em .5em .25em .5em
+}
+table.result th {vertical-align:bottom}
+tr.param th {padding-left:1em;padding-right:1em}
+tr.param td {padding-left:.5em;padding-right:2em}
+td.numi,th.numi,td.numi_attn {
+text-align:right
+}
+tr.total td {font-weight:bold}
+table caption {
+text-align:center;font-weight:bold;
+}
+table.passed tr.stripe td,table tr.passedodd td {background-color: #00AA00;}
+table.passed td,table tr.passedeven td {background-color: #33FF33;}
+table.passed tr.stripe td,table tr.skippedodd td {background-color: #cccccc;}
+table.passed td,table tr.skippedodd td {background-color: #dddddd;}
+table.failed tr.stripe td,table tr.failedodd td,table.result td.numi_attn {background-color: #FF3333;}
+table.failed td,table tr.failedeven td,table.result tr.stripe td.numi_attn {background-color: #DD0000;}
+tr.stripe td,tr.stripe th {background-color: #E6EBF9;}
+p.totop {font-size:85%;text-align:center;border-bottom:2px black solid}
+div.shootout {padding:2em;border:3px #4854A8 solid}
+</style>
+</head>
+<body>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
+<tr><td style="text-align:left;padding-right:2em">SETUP-HUB AND NODE CREATION</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi">0</td><td class="numi">0.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER Chrome ON WINDOWS</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">515.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER CH ON LINUX</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">478.8 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER CH ON MAC</td><td class="numi">6</td><td class="numi">6</td><td class="numi">0</td><td class="numi">0</td><td class="numi">498.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER FF ON WINDOWS</td><td class="numi">4</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">2</td><td class="numi">545.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER FF ON MAC</td><td class="numi">1</td><td class="numi">1</td><td class="numi">0</td><td class="numi_attn">5</td><td class="numi">215.4 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">GRID TEST WITH BROWSER FF ON LINUX</td><td class="numi">0</td><td class="numi">0</td><td class="numi_attn">6</td><td class="numi">0</td><td class="numi">10.0 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="total"><td>Total</td>
+<td class="numi">24</td><td class="numi">24</td><td class="numi_attn">6</td><td class="numi_attn">7</td><td class="numi">2,262.9 seconds</td><td colspan="2">&nbsp;</td></tr>
+</table>
+<table cellspacing="0" cellpadding="0" class="passed" id="summary">
+<tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">SETUP-HUB AND NODE CREATION &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">utils.InitiateHubAndNode</td><td><a href="#m1"><b>setup</b>  </a></td><td class="numi">1</td><td>1454660766430</td><td class="numi">74</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER Chrome ON WINDOWS &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">googledrive.GoogleDriveScenarios</td><td><a href="#m2"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454660779727</td><td class="numi">23775</td></tr><tr class="passedodd"><td><a href="#m3"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454660845945</td><td class="numi">45416</td></tr><tr class="passedodd"><td><a href="#m4"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454660930428</td><td class="numi">43505</td></tr><tr class="passedodd"><td><a href="#m5"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454661015898</td><td class="numi">57538</td></tr><tr class="passedodd"><td><a href="#m6"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454661114647</td><td class="numi">57345</td></tr><tr class="passedodd"><td><a href="#m7"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454661208167</td><td class="numi">73618</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER CH ON LINUX &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">googledrive.GoogleDriveScenarios</td><td><a href="#m8"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454661297720</td><td class="numi">22198</td></tr><tr class="passedodd"><td><a href="#m9"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454661354375</td><td class="numi">45292</td></tr><tr class="passedodd"><td><a href="#m10"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454661439310</td><td class="numi">41761</td></tr><tr class="passedodd"><td><a href="#m11"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454661522435</td><td class="numi">51863</td></tr><tr class="passedodd"><td><a href="#m12"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454661607202</td><td class="numi">49180</td></tr><tr class="passedodd"><td><a href="#m13"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454661692707</td><td class="numi">67917</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER CH ON MAC &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="6">googledrive.GoogleDriveScenarios</td><td><a href="#m14"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454661775953</td><td class="numi">22248</td></tr><tr class="passedodd"><td><a href="#m15"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454661835325</td><td class="numi">42594</td></tr><tr class="passedodd"><td><a href="#m16"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454661916291</td><td class="numi">42730</td></tr><tr class="passedodd"><td><a href="#m17"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454661999977</td><td class="numi">52487</td></tr><tr class="passedodd"><td><a href="#m18"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454662093239</td><td class="numi">47771</td></tr><tr class="passedodd"><td><a href="#m19"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454662183205</td><td class="numi">75439</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON WINDOWS &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="2">googledrive.GoogleDriveScenarios</td><td><a href="#m20"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454662599768</td><td class="numi">179453</td></tr><tr class="failedodd"><td><a href="#m21"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454662801760</td><td class="numi">2062</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON WINDOWS &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="4">googledrive.GoogleDriveScenarios</td><td><a href="#m22"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454662276354</td><td class="numi">29427</td></tr><tr class="passedodd"><td><a href="#m23"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454662345989</td><td class="numi">41166</td></tr><tr class="passedodd"><td><a href="#m24"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454662425984</td><td class="numi">41720</td></tr><tr class="passedodd"><td><a href="#m25"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454662507158</td><td class="numi">53965</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON MAC &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="5">googledrive.GoogleDriveScenarios</td><td><a href="#m26"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454662821890</td><td class="numi">2164</td></tr><tr class="failedodd"><td><a href="#m27"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454662861543</td><td class="numi">2868</td></tr><tr class="failedodd"><td><a href="#m28"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454662902400</td><td class="numi">2713</td></tr><tr class="failedodd"><td><a href="#m29"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454662978059</td><td class="numi">1646</td></tr><tr class="failedodd"><td><a href="#m30"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454663017471</td><td class="numi">1806</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON MAC &#8212; passed</th></tr>
+<tr class="passedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m31"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454662941690</td><td class="numi">1</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON LINUX &#8212; failed (configuration methods)</th></tr>
+<tr class="failedodd"><td rowspan="1">googledrive.GoogleDriveScenarios</td><td><a href="#m32"><b>GridCaps</b>  </a></td><td class="numi">1</td><td>1454663019327</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON LINUX &#8212; skipped (configuration methods)</th></tr>
+<tr class="skippedodd"><td rowspan="2">googledrive.GoogleDriveScenarios</td><td><a href="#m33"><b>GridCaps</b>  </a></td><td class="numi">5</td><td>1454663029349</td><td class="numi">11</td></tr><tr class="skippedodd"><td><a href="#m34"><b>teardownafterrun</b>  </a></td><td class="numi">1</td><td>1454663029376</td><td class="numi">0</td></tr>
+<tr><th colspan="4">GRID TEST WITH BROWSER FF ON LINUX &#8212; skipped</th></tr>
+<tr class="skippedodd"><td rowspan="6">googledrive.GoogleDriveScenarios</td><td><a href="#m35"><b>GoogleDriveNegativeScenarioLoginFirstCase</b>  </a></td><td class="numi">1</td><td>1454663029346</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m36"><b>UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454663029349</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m37"><b>UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454663029352</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m38"><b>RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</b>  </a></td><td class="numi">1</td><td>1454663029354</td><td class="numi">1</td></tr><tr class="skippedodd"><td><a href="#m39"><b>CloseBrowserWhileUploadingFileFromGoogleDrive</b>  </a></td><td class="numi">1</td><td>1454663029358</td><td class="numi">0</td></tr><tr class="skippedodd"><td><a href="#m40"><b>GoogleDriveUploadImageWhenInternetIsOff</b>  </a></td><td class="numi">1</td><td>1454663029361</td><td class="numi">0</td></tr>
+</table>
+<h1>SETUP-HUB AND NODE CREATION</h1>
+<h2 id="m1">utils.InitiateHubAndNode:setup</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER Chrome ON WINDOWS</h1>
+<h2 id="m2">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m3">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m4">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m5">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m6">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m7">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER CH ON LINUX</h1>
+<h2 id="m8">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m9">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m10">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m11">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m12">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m13">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER CH ON MAC</h1>
+<h2 id="m14">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m15">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m16">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m17">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m18">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m19">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER FF ON WINDOWS</h1>
+<h2 id="m20">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<div style="padding-left:3em">
+<p>Session [c9ba5292-fd80-4791-8377-cd349aa2c3d6] was terminated due to SO_TIMEOUT
+Command duration or timeout: 7 milliseconds
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=c9ba5292-fd80-4791-8377-cd349aa2c3d6, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: c9ba5292-fd80-4791-8377-cd349aa2c3d6</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:701)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.close(RemoteWebDriver.java:521)
+<br/>at googledrive.GoogleDriveScenarios.CloseBrowserWhileUploadingFileFromGoogleDrive(GoogleDriveScenarios.java:229)
+<br/>25 lines not shown
+<p>Caused by Session [c9ba5292-fd80-4791-8377-cd349aa2c3d6] was terminated due to SO_TIMEOUT
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.grid.internal.ActiveTestSessions.getExistingSession(ActiveTestSessions.java:105)
+<br/>at org.openqa.grid.internal.Registry.getExistingSession(Registry.java:423)
+<br/>at org.openqa.grid.web.servlet.handler.RequestHandler.getSession(RequestHandler.java:238)
+<br/>at org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:119)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.doDelete(DriverServlet.java:73)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)
+<br/>at org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)
+<br/>at org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)
+<br/>at org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)
+<br/>at org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+<br/>at org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+<br/>at org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+<br/>at org.seleniumhq.jetty7.server.Server.handle(Server.java:349)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+<br/>at org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:884)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:938)
+<br/>at org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:634)
+<br/>at org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:230)
+<br/>at org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)
+<br/>at org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)
+<br/>at org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+<br/>at org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m21">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 231 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=7e2ef503-31be-45e4-861c-bc4931ad3532, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 7e2ef503-31be-45e4-861c-bc4931ad3532
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveUploadImageWhenInternetIsOff(GoogleDriveScenarios.java:155)
+<br/>25 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveUploadImageWhenInternetIsOff(GoogleDriveScenarios.java:155)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous8257709001610865695webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous8257709001610865695webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous8257709001610865695webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous8257709001610865695webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous8257709001610865695webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m22">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m23">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m24">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m25">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER FF ON MAC</h1>
+<h2 id="m26">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 382 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=9d83a94c-0605-4572-a77a-d3e8bde87328, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 9d83a94c-0605-4572-a77a-d3e8bde87328
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveNegativeScenarioLoginFirstCase(GoogleDriveScenarios.java:102)
+<br/>25 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveNegativeScenarioLoginFirstCase(GoogleDriveScenarios.java:102)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3264365738361765466webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3264365738361765466webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3264365738361765466webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3264365738361765466webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3264365738361765466webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m27">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 190 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=d51852e3-fc4c-401a-9ed3-2722600f18a3, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d51852e3-fc4c-401a-9ed3-2722600f18a3
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveUploadImageWhenInternetIsOff(GoogleDriveScenarios.java:155)
+<br/>25 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.GoogleDriveUploadImageWhenInternetIsOff(GoogleDriveScenarios.java:155)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous12140620071294194webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous12140620071294194webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous12140620071294194webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous12140620071294194webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous12140620071294194webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m28">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 246 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=2226ebe7-a191-426e-a6e6-edd57b381713, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2226ebe7-a191-426e-a6e6-edd57b381713
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.UploadFileOrImageInDesktopGoogleDrive(GoogleDriveScenarios.java:325)
+<br/>at googledrive.GoogleDriveScenarios.UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite(GoogleDriveScenarios.java:132)
+<br/>25 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.UploadFileOrImageInDesktopGoogleDrive(GoogleDriveScenarios.java:325)
+<br/>at googledrive.GoogleDriveScenarios.UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite(GoogleDriveScenarios.java:132)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3346351155604930803webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3346351155604930803webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3346351155604930803webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3346351155604930803webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous3346351155604930803webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m29">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 245 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=74e29261-ad31-419a-9bc7-379828451c43, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 74e29261-ad31-419a-9bc7-379828451c43
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.UploadFileOrImageInDesktopGoogleDrive(GoogleDriveScenarios.java:325)
+<br/>at googledrive.GoogleDriveScenarios.UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite(GoogleDriveScenarios.java:120)
+<br/>25 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.UploadFileOrImageInDesktopGoogleDrive(GoogleDriveScenarios.java:325)
+<br/>at googledrive.GoogleDriveScenarios.UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite(GoogleDriveScenarios.java:120)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous6518794674644089922webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous6518794674644089922webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous6518794674644089922webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous6518794674644089922webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous6518794674644089922webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m30">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<div style="padding-left:3em">
+<p>Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+Command duration or timeout: 195 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=24.0, platform=WINDOWS, browserConnectionEnabled=true, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=51c96e0a-778a-4491-b449-a80206fe975c, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 51c96e0a-778a-4491-b449-a80206fe975c
+*** Element info: {Using=css selector, value=div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive}</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.CloseBrowserWhileUploadingFileFromGoogleDrive(GoogleDriveScenarios.java:210)
+<br/>25 lines not shown
+<p>Caused by Screen shot has been taken
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: RemoteWebDriver</p>
+org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:492)
+<br/>at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+<br/>at googledrive.GoogleDriveScenarios.Login(GoogleDriveScenarios.java:266)
+<br/>at googledrive.GoogleDriveScenarios.CloseBrowserWhileUploadingFileFromGoogleDrive(GoogleDriveScenarios.java:210)
+<br/>25 lines not shown
+<p>Caused by Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.one-whole a.maia-button.button-download.mobile-is-hidden.get-started.go-to-drive&quot;}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.46.0&apos;, revision: &apos;87c69e2&apos;, time: &apos;2015-06-04 16:16:47&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+&lt;anonymous class&gt;.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous5310298206613417190webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10299)
+<br/>at &lt;anonymous class&gt;.FirefoxDriver.prototype.findElement(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous5310298206613417190webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10308)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_/h(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous5310298206613417190webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12282)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.executeInternal_(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous5310298206613417190webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12287)
+<br/>at &lt;anonymous class&gt;.DelayedCommand.prototype.execute/&lt;(file:///C:/Users/BSRAJU/AppData/Local/Temp/anonymous5310298206613417190webdriver-profile/extensions/fxdriver@googlecode.com/components/command-processor.js:12229)
+<br/>1 lines not shown
+</div>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m31">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h1>GRID TEST WITH BROWSER FF ON LINUX</h1>
+<h2 id="m32">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<table cellspacing="0" cellpadding="0" class="result">
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr>
+<tr class="param stripe"><td>FF</td>
+<td>LINUX</td>
+</tr>
+<tr><td style="padding-left:3em" colspan="2">
+<p>Error forwarding the new session cannot find : Capabilities [{browserName=firefox, version=, platform=LINUX}]
+Command duration or timeout: 12 milliseconds
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver</p>
+sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br/>at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br/>at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br/>at java.lang.reflect.Constructor.newInstance(Constructor.java:422)
+<br/>at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+<br/>at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+<br/>at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:158)
+<br/>at googledrive.GoogleDriveScenarios.GridCaps(GoogleDriveScenarios.java:91)
+<br/>26 lines not shown
+<p>Caused by Error forwarding the new session cannot find : Capabilities [{browserName=firefox, version=, platform=LINUX}]
+Build info: version: &apos;2.49.1&apos;, revision: &apos;808c23b0963853d375cbe54b90bbd052e2528a54&apos;, time: &apos;2016-01-21 09:37:52&apos;
+System info: host: &apos;SRAJU&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;1.8.0_71&apos;
+Driver info: driver.version: unknown</p>
+org.openqa.grid.web.servlet.handler.RequestHandler.process(RequestHandler.java:114)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.process(DriverServlet.java:83)
+<br/>at org.openqa.grid.web.servlet.DriverServlet.doPost(DriverServlet.java:67)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:727)
+<br/>at javax.servlet.http.HttpServlet.service(HttpServlet.java:820)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHolder.handle(ServletHolder.java:565)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHandler.doHandle(ServletHandler.java:479)
+<br/>at org.seleniumhq.jetty7.server.session.SessionHandler.doHandle(SessionHandler.java:225)
+<br/>at org.seleniumhq.jetty7.server.handler.ContextHandler.doHandle(ContextHandler.java:1031)
+<br/>at org.seleniumhq.jetty7.servlet.ServletHandler.doScope(ServletHandler.java:406)
+<br/>at org.seleniumhq.jetty7.server.session.SessionHandler.doScope(SessionHandler.java:186)
+<br/>at org.seleniumhq.jetty7.server.handler.ContextHandler.doScope(ContextHandler.java:965)
+<br/>at org.seleniumhq.jetty7.server.handler.ScopedHandler.handle(ScopedHandler.java:117)
+<br/>at org.seleniumhq.jetty7.server.handler.HandlerWrapper.handle(HandlerWrapper.java:111)
+<br/>at org.seleniumhq.jetty7.server.Server.handle(Server.java:349)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:452)
+<br/>at org.seleniumhq.jetty7.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:47)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection.content(AbstractHttpConnection.java:894)
+<br/>at org.seleniumhq.jetty7.server.AbstractHttpConnection$RequestHandler.content(AbstractHttpConnection.java:948)
+<br/>at org.seleniumhq.jetty7.http.HttpParser.parseNext(HttpParser.java:857)
+<br/>at org.seleniumhq.jetty7.http.HttpParser.parseAvailable(HttpParser.java:235)
+<br/>at org.seleniumhq.jetty7.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:66)
+<br/>at org.seleniumhq.jetty7.server.bio.SocketConnector$ConnectorEndPoint.run(SocketConnector.java:254)
+<br/>at org.seleniumhq.jetty7.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:599)
+<br/>at org.seleniumhq.jetty7.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:534)
+<br/>at java.lang.Thread.run(Unknown Source)
+<br/>1 lines not shown
+</td></tr>
+</table>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m33">googledrive.GoogleDriveScenarios:teardownafterrun</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m34">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m35">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m36">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m37">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m38">googledrive.GoogleDriveScenarios:GridCaps</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m39">googledrive.GoogleDriveScenarios:UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m40">googledrive.GoogleDriveScenarios:GoogleDriveUploadImageWhenInternetIsOff</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m41">googledrive.GoogleDriveScenarios:RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m42">googledrive.GoogleDriveScenarios:UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m43">googledrive.GoogleDriveScenarios:GoogleDriveNegativeScenarioLoginFirstCase</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+<h2 id="m44">googledrive.GoogleDriveScenarios:CloseBrowserWhileUploadingFileFromGoogleDrive</h2>
+<p class="totop"><a href="#summary">back to summary</a></p>
+</body></html>

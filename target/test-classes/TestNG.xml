@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<suite name="GRID SAMPLE TEST" thread-count="10" preserve-order="true" >
+
+    <test name="SETUP-HUB AND NODE CREATION">
+           <classes>
+            <class name ="utils.InitiateHubAndNode"/>
+        </classes>
+    </test>     
+    
+     <test name="GRID TEST WITH BROWSER Chrome ON WINDOWS">
+    	<parameter name ="browserType" value="CH"/>
+    	<parameter name ="platform" value="WINDOWS"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test>
+    
+    
+   <test name="GRID TEST WITH BROWSER CH ON LINUX">
+    	<parameter name ="browserType" value="CH"/>
+    	<parameter name ="platform" value="LINUX"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test>
+    
+    
+    <test name="GRID TEST WITH BROWSER CH ON MAC">
+    	<parameter name ="browserType" value="CH"/>
+    	<parameter name ="platform" value="MAC"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test>  
+    
+    <test name="GRID TEST WITH BROWSER FF ON WINDOWS">
+    	<parameter name ="browserType" value="FF"/>
+    	<parameter name ="platform" value="WINDOWS"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test> 
+    
+     <test name="GRID TEST WITH BROWSER FF ON MAC">
+    	<parameter name ="browserType" value="FF"/>
+    	<parameter name ="platform" value="MAC"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test> 
+    
+     <test name="GRID TEST WITH BROWSER FF ON LINUX">
+    	<parameter name ="browserType" value="FF"/>
+    	<parameter name ="platform" value="LINUX"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test>   
+    
+    
+     <!--  <test name="GRID TEST WITH BROWSER IE ON WINDOWS">
+    	<parameter name ="browserType" value="IE"/>
+    	<parameter name ="platform" value="WINDOWS"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test>
+            
+    <test name="GRID TEST WITH BROWSER IE ON LINUX">
+    	<parameter name ="browserType" value="IE"/>
+    	<parameter name ="platform" value="LINUX"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test>     
+    
+    <test name="GRID TEST WITH BROWSER IE ON MAC">
+    	<parameter name ="browserType" value="IE"/>
+    	<parameter name ="platform" value="MAC"/>
+        <classes>
+            <class name ="googledrive.GoogleDriveScenarios"/>
+        </classes>
+    </test>   -->
+
+   
+
+   
+</suite>

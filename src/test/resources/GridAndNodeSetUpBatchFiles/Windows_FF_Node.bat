@@ -1,0 +1,1 @@
+java -jar selenium-server-standalone-2.46.0.jar -role webdriver -browser browserName="firefox",version=24.0,platform=WINDOWS -Dwebdriver.ie.driver=.\IEDriverServer.exe -hubhttp://localhost:4444/grid/register -port 8675 -nodeTimeout 6000

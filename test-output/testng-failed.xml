@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="10" name="Failed suite [GRID SAMPLE TEST]">
+  <parameter name="platform" value="LINUX"/>
+  <parameter name="browserType" value="FF"/>
+  <test name="GRID TEST WITH BROWSER FF ON WINDOWS(failed)">
+    <parameter name="platform" value="WINDOWS"/>
+    <parameter name="browserType" value="FF"/>
+    <classes>
+      <class name="googledrive.GoogleDriveScenarios">
+        <methods>
+          <include name="GoogleDriveUploadImageWhenInternetIsOff"/>
+          <include name="CloseBrowserWhileUploadingFileFromGoogleDrive"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+        </methods>
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </classes>
+  </test> <!-- GRID TEST WITH BROWSER FF ON WINDOWS(failed) -->
+  <test name="GRID TEST WITH BROWSER FF ON MAC(failed)">
+    <parameter name="platform" value="MAC"/>
+    <parameter name="browserType" value="FF"/>
+    <classes>
+      <class name="googledrive.GoogleDriveScenarios">
+        <methods>
+          <include name="GoogleDriveUploadImageWhenInternetIsOff"/>
+          <include name="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite"/>
+          <include name="GoogleDriveNegativeScenarioLoginFirstCase"/>
+          <include name="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite"/>
+          <include name="CloseBrowserWhileUploadingFileFromGoogleDrive"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+        </methods>
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </classes>
+  </test> <!-- GRID TEST WITH BROWSER FF ON MAC(failed) -->
+  <test name="GRID TEST WITH BROWSER FF ON LINUX(failed)">
+    <parameter name="platform" value="LINUX"/>
+    <parameter name="browserType" value="FF"/>
+    <classes>
+      <class name="googledrive.GoogleDriveScenarios">
+        <methods>
+          <include name="GoogleDriveUploadImageWhenInternetIsOff"/>
+          <include name="UploadFileInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite"/>
+          <include name="GoogleDriveNegativeScenarioLoginFirstCase"/>
+          <include name="UploadImageInDesktopGoogleDriveAndCheckFileGetsSyncedToTheGoogleDriveWebsite"/>
+          <include name="RenameUploadFileInDekstopGoogleDrivAndCheckFileGetsSyncedToTheGoogleDriveWebsite"/>
+          <include name="CloseBrowserWhileUploadingFileFromGoogleDrive"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+          <include name="GridCaps"/>
+        </methods>
+      </class> <!-- googledrive.GoogleDriveScenarios -->
+    </classes>
+  </test> <!-- GRID TEST WITH BROWSER FF ON LINUX(failed) -->
+</suite> <!-- Failed suite [GRID SAMPLE TEST] -->
